@@ -2,10 +2,13 @@
   "name": "@website/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "format": "biome format --write"
+  },
   "private": true,
   "dependencies": {},
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@nx/js": "19.5.7",
     "@nx/workspace": "19.5.7",
     "nx": "19.5.7"
