@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "dev": "nx run-many -t dev --projects='apps/**'"
   },
   "private": true,
   "dependencies": {},
@@ -12,5 +13,6 @@
     "@nx/js": "19.5.7",
     "@nx/workspace": "19.5.7",
     "nx": "19.5.7"
-  }
+  },
+  "workspaces": ["apps/**"]
 }

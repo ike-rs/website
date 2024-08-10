@@ -5,5 +5,14 @@
     "production": ["default"],
     "sharedGlobals": []
   },
+  "targetDefaults": {
+    "build": {
+      "cache": true,
+      "dependsOn": ["^build"]
+    },
+    "lint": {
+      "cache": true
+    }
+  },
   "nxCloudAccessToken": "YTQzZjJiZjEtOWU5ZC00ZGI0LWFhMTEtYTYxZjg0MzFiNjNmfHJlYWQtd3JpdGU="
 }
