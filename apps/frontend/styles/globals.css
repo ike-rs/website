@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.shiki {
+  @apply rounded-xl p-4 bg-content1 border border-borderLight z-[1000] text-sm md:text-medium w-full
+}

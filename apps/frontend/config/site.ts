@@ -9,61 +9,32 @@ export const siteConfig = {
       href: '/',
     },
     {
-      label: 'Docs',
-      href: '/docs',
+      label: 'About',
+      href: '/about',
     },
     {
-      label: 'Pricing',
-      href: '/pricing',
+      label: 'Packages',
+      href: '/packages',
     },
+  ],
+  navMenuItems: [
     {
-      label: 'Blog',
-      href: '/blog',
+      label: 'Home',
+      href: '/',
     },
     {
       label: 'About',
       href: '/about',
     },
-  ],
-  navMenuItems: [
     {
-      label: 'Profile',
-      href: '/profile',
-    },
-    {
-      label: 'Dashboard',
-      href: '/dashboard',
-    },
-    {
-      label: 'Projects',
-      href: '/projects',
-    },
-    {
-      label: 'Team',
-      href: '/team',
-    },
-    {
-      label: 'Calendar',
-      href: '/calendar',
-    },
-    {
-      label: 'Settings',
-      href: '/settings',
-    },
-    {
-      label: 'Help & Feedback',
-      href: '/help-feedback',
-    },
-    {
-      label: 'Logout',
-      href: '/logout',
+      label: 'Packages',
+      href: '/packages',
     },
   ],
   links: {
-    github: 'https://github.com/nextui-org/nextui',
-    twitter: 'https://twitter.com/getnextui',
-    docs: 'https://nextui.org',
+    github: 'https://github.com/ike-rs/ike',
     discord: 'https://discord.gg/9b6yyZKmH4',
     sponsor: 'https://github.com/sponsors/malezjaa',
+    docs: '/docs',
   },
 };
