@@ -7,12 +7,16 @@
     "dev": "nx run-many -t dev --projects='apps/**'"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "typescript": "5.5.4"
+  },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
     "@nx/js": "19.5.7",
     "@nx/workspace": "19.5.7",
     "nx": "19.5.7"
   },
-  "workspaces": ["apps/**"]
+  "workspaces": [
+    "apps/**"
+  ]
 }

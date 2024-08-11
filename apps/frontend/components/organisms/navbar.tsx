@@ -24,6 +24,7 @@ import {
   SearchIcon,
   Logo,
 } from '@/components/icons';
+import { User } from '@/components/atoms/user';
 
 export const Navbar = () => {
   const searchInput = (
@@ -98,6 +99,9 @@ export const Navbar = () => {
           >
             Sponsor
           </Button>
+        </NavbarItem>
+        <NavbarItem className="hidden lg:flex">
+          <User />
         </NavbarItem>
       </NavbarContent>
 

@@ -1,20 +1,22 @@
 {
   "name": "api",
-  "private": true,
+  "module": "src/index.ts",
+  "type": "module",
   "scripts": {
-    "build": "nitro build",
-    "dev": "nitro dev --port 3001",
-    "prepare": "nitro prepare",
-    "preview": "node .output/server/index.mjs"
+    "dev": "bun --watch src/index.ts --debug"
   },
   "devDependencies": {
-    "drizzle-kit": "^0.24.0",
-    "nitropack": "latest"
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@supabase/ssr": "^0.4.0",
-    "@supabase/supabase-js": "^2.45.1",
-    "drizzle-orm": "^0.33.0",
-    "postgres": "^3.4.4"
+    "@elysiajs/cors": "^1.1.0",
+    "@elysiajs/swagger": "^1.1.0",
+    "@lucia-auth/adapter-drizzle": "^1.1.0",
+    "arctic": "^1.9.2",
+    "elysia": "^1.1.5",
+    "lucia": "^3.2.0"
   }
 }
