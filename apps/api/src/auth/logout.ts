@@ -2,7 +2,7 @@ import { createBaseElysia } from "../base";
 import { BadRequestException } from "../utils/errors";
 import { lucia } from "../utils/lucia";
 
-export const logoutRoute = createBaseElysia().post("/logout", async ({ cookie }) => {
+export const logoutRoute = createBaseElysia().post("/logout", async ({ cookie, redirect }) => {
     const sessionCookie = cookie[lucia.sessionCookieName];
 
     if (!sessionCookie?.value) {
@@ -15,4 +15,6 @@ export const logoutRoute = createBaseElysia().post("/logout", async ({ cookie })
         value: blankSessionCookie.value,
         ...blankSessionCookie.attributes,
     });
+
+    return redirect("http://localhost:3000");
 });

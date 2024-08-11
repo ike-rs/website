@@ -1,6 +1,9 @@
-export const fetcher = (url: string) =>
-  fetch(new URL('http://localhost:3001' + url).toString(), {
-    credentials: 'include'
-  }).then((res) =>
-    res.json(),
-  );
+import { ofetch } from "ofetch";
+
+export const $fetch = ofetch.create({
+  baseURL: "http://localhost:3001",
+  credentials: 'include'
+
+})
+
+export const fetcher = (url: string) => $fetch(url).then((res) => res)
