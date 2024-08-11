@@ -4,6 +4,7 @@ import { users } from '../db/schema.ts';
 import { debug } from '../logger.ts';
 import { lucia } from '../utils/lucia.ts';
 import { getAccount, getEmail, getTokens } from '../utils/provider.ts';
+import { eq } from 'drizzle-orm';
 
 export const callbackRoute = createBaseElysia().get(
     'callback',
@@ -40,6 +41,13 @@ export const callbackRoute = createBaseElysia().get(
                 id: users.id
             })
             id = result[0].id;
+        } else {
+            debug(`Updating username and avatar for user with id: ${id}`);
+
+            await db.update(users).set({
+                username: user.username,
+                avatar: user.avatar,
+            }).where(eq(users.id, id as string));
         }
 
         debug(`Creating session for user with id: ${id}`);
