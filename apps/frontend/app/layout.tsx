@@ -5,8 +5,8 @@ import clsx from 'clsx';
 
 import { Providers } from './providers';
 
-import { siteConfig } from '@/config/site';
-import { fontSans } from '@/config/fonts';
+import { siteConfig } from '@/lib/config/site';
+import { fontSans } from '@/lib/config/fonts';
 import { Navbar } from '@/components/organisms/navbar';
 import { Footer } from '@/components/organisms/footer';
 

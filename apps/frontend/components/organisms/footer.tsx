@@ -1,5 +1,5 @@
 import { Link } from '@nextui-org/link';
-import { siteConfig } from '@/config/site';
+import { siteConfig } from '@/lib/config/site';
 import { DiscordIcon, GithubIcon, Logo } from '@/components/icons';
 import NextLink from 'next/link';
 

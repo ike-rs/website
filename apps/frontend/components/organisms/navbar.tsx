@@ -15,7 +15,7 @@ import { link as linkStyles } from '@nextui-org/theme';
 import NextLink from 'next/link';
 import clsx from 'clsx';
 
-import { siteConfig } from '@/config/site';
+import { siteConfig } from '@/lib/config/site';
 import {
   TwitterIcon,
   GithubIcon,
@@ -110,6 +110,7 @@ export const Navbar = () => {
           <GithubIcon className="text-default-500" />
         </Link>
         <NavbarMenuToggle />
+        <User />
       </NavbarContent>
 
       <NavbarMenu>
